@@ -1,0 +1,537 @@
+/* THIS IS MY FIRST ASSIGNMENT ON WEB DEVELOPMENT */
+/* BUILDING A HOTEL WEB LANDING PAGE */
+/* Below code is used to reset the css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Below code is the user define function */
+:root {
+    --GBCOLOR: #18024b;
+    --GbColor2: #fff;
+    --fontcolor1: #ffffff;
+    --fontcolor2: #000;
+    --visited: #0470122a;
+    --active:#3309ee2a;
+    --fontsize1: 1.5rem;
+    --fontsize2: 2rem;
+    --fontsize3: 3rem;
+
+}
+
+/* Below code is used to format the body */
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--GBCOLOR);
+    margin: 0 auto;
+}
+
+/* Below code is used to format the banner div element */
+.banner {
+    width: 100%;
+    height: 100vh;
+    background-image: url('../img/banner.jfif');
+    display: block;
+    animation-name: changebanner;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    justify-content: space-between;
+}
+
+/* Below code is use to animate the banner div element */
+@keyframes changebanner {
+    10% {background-image: url('../img/banner.jfif'); background-size: cover;}
+    20% {background-image: url('../img/banner2.jfif'); background-size: cover;}
+    30% {background-image: url('../img/banner3.jfif') ; background-size: cover;}
+    40% {background-image: url('../img/banner4.jfif'); background-size: cover;}
+    50% {background-image: url('../img/banner5.jfif'); background-size: cover;}
+    60%{background-image: url('../img/banner6.jfif'); background-size: cover;}
+    70%{background-image: url('../img/banner7.jfif'); background-size: cover;}
+    80%{background-image: url('../img/banner8.jfif'); background-size: cover;}
+    90%{background-image: url('../img/banner9.jfif'); background-size: cover;}
+    100%{background-image: url('../img/banner10.jfif'); background-size: cover;}
+}
+
+/* Below code is used to format the menu nav element */
+.menu {
+    display: inline-flex;
+    margin: 20px auto;
+    padding: 10px;
+    justify-content: space-between;
+    margin-bottom: 8rem;
+}
+
+/* Below code is used to format the logo img element in the menu nav element */
+.menu img {
+    width: 50px;
+    height: 50px;
+    margin-left: 30px;
+}
+
+/* Below code is used to target the ul element in the menu nav element */
+.menu ul {
+    list-style: none;
+    padding-left: 35rem;
+    text-align: right;
+}
+
+/* Below code is used to format the li element in the ul element inside the menu nav element */
+.menu ul li {
+   display: inline-flex;
+   text-align: right;
+   padding: 0 20px 0 20px;
+   font-size: var(--fontsize1);
+}
+
+/* Below code is used to target the a element in the li element */
+.menu ul li a{
+    text-decoration: none;
+    color: var(--fontcolor2);
+    font-weight: bolder;
+}
+
+/* Below code is hover pseudo code */
+.menu ul li a:hover, .menu ul li a:focus {
+    background-color: papayawhip;
+    color: var(--fontcolor2);
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 5px;
+    text-transform: uppercase;
+    font-size: var(--fontsize1);
+    text-decoration: underline;
+}
+
+/* Below code is used to format the visited pseudo code */
+.menu ul li a:visited {
+    color: var(--visited);
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 0 20px 0 20px;;
+    text-transform: uppercase;
+    font-size: var(--fontsize1);
+    text-decoration: none;
+}
+
+/* Below code is used to format the active pseudo code element */
+.menu ul li a:active {
+    color: var(--active);
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 0 20px 0 20px;;
+    text-transform: uppercase;
+    font-size: var(--fontsize1);
+    text-decoration: none;
+}
+
+/* Below code is use to target the h1 element inside the banner element */
+.banner h1 {
+    color: var(--fontcolor1);
+    margin:2rem 0 0 8rem;
+    font-size: var(--fontsize3);
+    animation-name: changetext;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    font-weight: bolder;
+}
+
+/* Below code is used to format the text animation */
+@keyframes changetext {
+    60%{color: gold;}
+    70%{color: black;}
+    80%{color:rgba(4, 112, 18, 0.164);}
+    90%{color: darkgray;}
+    100%{color: var(--active);}
+}
+
+/* Below code is used to format the p element */
+.banner p {
+    color: var(--fontcolor1);
+    font-size: var(--fontsize1);
+    margin: 2rem 0 0 8rem;
+    text-transform: capitalize;
+    animation-name: changetext;
+    animation-iteration-count: infinite;
+    animation-duration: 20s;
+    font-weight: bolder;
+    font-style: italic;
+}
+
+/* MAIN PAGE ELEMENT */
+/* Below code is used to format the About main element */
+main {
+    display: grid;
+    grid-template-columns: 40rem auto;
+    grid-gap: 5rem;
+    background-color: var(--GbColor2);
+}
+
+/* Below code is used to format the img element in the main element */
+main img {
+    display: grid;
+    width: 30rem;
+    height: 30rem;
+    justify-content: right;
+    margin: 8rem 4rem 8rem 2rem;
+}
+/* Below code is used to format the h2 element in the main element */
+main h2 {
+    display: block;
+    font-size: var(--fontsize3);
+    text-align: center;
+    padding-top: 4rem;
+    padding-bottom: 3rem;
+}
+/* Below code is used to format the p element in the main element */
+main p {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    text-indent: 4rem;
+    word-wrap: wrap;
+    font-size: large;
+    word-spacing: 20px;
+}
+/* END OF MAIN SECTION ELEMENT */
+
+/* OFFER SECTION ELEMENT */
+/* Below code is used to target the offer section element */
+.offers {
+    width: 100vw;
+    height: 100vh;
+    display:inline-block;
+}
+
+/* Below code is used to target h2 element in the offers section element */
+.offers h2 {
+    margin:4rem auto;
+    font-size: var(--fontsize3);
+    color: var(--fontcolor1);
+    text-align: center;
+    justify-content:center;
+    align-items: center;
+    text-transform: capitalize;
+
+}
+
+/* Below code is used to target the container div element */
+.containerbox {
+    display: inline-flex;
+    width: 50%;
+    height: 50vh;
+    margin-left: 4rem;
+    margin-right: 4rem;
+}
+/* Below code is used to format the box div element */
+.offers .box {
+    display: inline;
+    width: 90vw;
+    height: 90vh;
+    margin:2rem;
+}
+
+/* Below code is used to set the hover to the box div element */
+.offers .box:hover {
+    transform: scale(1.1);
+    transition: ease-in-out 1s;
+    cursor: pointer;
+} 
+
+/* Below code is used to target the img element in the box div element */
+.offers .box img {
+    width: 400px;
+    height: 400px;
+    margin-top: -2px;
+}
+
+/* Below code is use to format the p element */
+.box p {
+    background-color: var(--GbColor2);
+    font-size: var(--fontsize1);
+    padding: 5px;
+    text-align: center;
+    margin-bottom: 2px;
+}
+/* END OF OFFER SECTION ELEMENT */
+
+/* ROOMS SECTION ELEMENT */
+/* Below code is used to target the room section element */
+.rooms {
+    width: 100vw;
+    height: 140vh;
+    display:inline-block;
+    background-color: var(--GbColor2);
+    color: var(--fontcolor2);
+}
+
+/* Below code is used to target the h2 element */
+.rooms h2 {
+    font-size: var(--fontsize3);
+    text-align: center;
+    font-weight: bolder;
+    padding-top: 4rem;
+    padding-bottom: 2px;
+    text-transform: capitalize;
+}
+
+/* Below code is used to format the p element in the rooms section elemnt */
+.rooms p {
+    font-size: var(--fontsize1);
+    font-style: italic;
+    text-align: center;
+    padding-bottom: 4px;
+}
+
+/* Below code is used to target the boxroom div element inside the rooms section */
+.boxroom {
+    display: inline-block;
+    width: 100vw;
+    height: 140vh;
+    margin:2rem;
+    cursor: pointer;
+}
+
+
+/* Below code is used to format img element in the boxroom div elemnet */
+.boxroom img {
+    width: 320px;
+    height: 320px;
+    margin-top: 2rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+/* Below code is used to set the pseudo code element for boxroom div element */
+.boxroom img:hover {
+    transform: scale(1.1);
+    transition: ease-in 1s;
+    cursor: pointer;
+}
+
+/* END OF ROOMS SECTION ELEMENT */
+
+/* GALLERY SECTION ELEMENT */
+/* Below code is used to format the gallery section element */
+.gallery {
+    width: 100vw;
+    height: 140vh;
+    display:inline-block;
+}
+
+/* Below code is used to format the h2 element in the gallery section element */
+.gallery h2 {
+    font-size: var(--fontsize3);
+    text-align: center;
+    font-weight: bolder;
+    padding-top: 4rem;
+    padding-bottom: 10px;
+    text-transform: capitalize;
+    color: var(--fontcolor1);
+}
+
+/* Below code is used to format the p element inside the gallery section element */
+.gallery p {
+    font-size: var(--fontsize1);
+    text-wrap: wrap;
+    text-align: center;
+    color: var(--fontcolor1);
+    padding-bottom: 4rem;
+    font-style: italic;
+}
+
+/* Below code is used to format the boxexplore div element inside the gallery section */
+.boxexplore {
+    display: inline-flex;
+    width: 50%;
+    height: 50vh;
+    margin-top: 2rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
+}
+
+/* Below code is used to target the explorebox div */
+.gallery .explorebox {
+    display: inline;
+    width: 90vw;
+    height: 90vh;
+    margin:2rem;
+}
+
+
+/* Below code is used to set the pseudo code element for explorebox div element */
+.gallery .explorebox:hover {
+    transform: scale(1.1);
+    transition: ease-in 1s;
+    cursor: pointer;
+}
+
+/* Below code is used to format the img element inside the explorebox div element */
+.gallery .explorebox img {
+    width: 400px;
+    height: 400px;
+    margin-top: 2px;
+}
+
+/* Below code is used to format the p element in the explorebox div element */
+.explorebox p {
+    background-color: var(--GbColor2);
+    color: var(--fontcolor2);
+    font-size: var(--fontsize1);
+    padding: 5px;
+    text-align: center;
+    margin-bottom: 2px;
+}
+
+
+/* END OF GALLERY SECTION ELEMENT */
+
+/* CONTACT SECTION ELEMENT */
+/* Below code is used to format the contact section */
+.contact {
+    max-width: 100vw;
+    height: 120vh;
+    display:inline-flex;
+    background-color: var(--GbColor2);
+    margin-top: 6rem;
+    padding-top: 3rem;
+}
+.contactme {
+    display: inline-flex;
+    width: 95vw;
+    height: 70vh;
+    margin-left: 3rem;
+    margin-right: 1rem;
+}
+
+/* Below code is used to format the contactForm  */
+.contactForm {
+    display: block;
+    padding: 10px 5px 10px 5px;
+}
+
+.contactForm h3 {
+    font-size: var(--fontsize2);
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.contactForm label{
+    font-size: var(--fontsize1);
+    font-weight: bolder;
+    text-align: left;
+    padding-left: 40px;
+    padding-bottom: 15px;
+}
+
+.contactForm input {
+    width: 90%;
+    height: 50px;
+    margin:10px 0 20px 40px;
+    border: 3px solid var(--fontcolor2);
+}
+
+.contactForm textarea {
+    width: 90%;
+    height: 180px;
+    margin:20px 0 40px 40px;
+    border: 3px solid var(--fontcolor2);
+   
+}
+
+.contactForm button {
+    padding: 10px;
+    font-size: var(--fontsize1);
+    margin-left: 20rem;
+    cursor: pointer;
+    
+}
+
+.contactForm button:hover {
+    background-color: var(--active);
+    color: var(--fontcolor2);
+    border: 2px solid rgb(240, 232, 232);
+    border-radius: 40px;
+    padding: 20px;
+    font-weight: bolder;
+}
+
+/* Below code is used to format the advert div element */
+.advert {
+    display: inline-flex;
+    width: 40vw;
+    height: 70vh;
+    margin-left: 1rem;
+    margin-right: 3rem;
+}
+.advert video {
+    width: 40vw;
+    height: 70vh;
+}
+
+/* END OF CONTACT SECTION */
+
+/* FOOTER SECTION */
+/* Below code is used to format the footer section */
+footer {
+    max-width: 100vw;
+    height: 50vh;
+    display:inline-flex;
+    margin-top: 2rem;
+    padding-top: 3rem;
+    color: var(--fontcolor1);
+    animation-name: footercolor;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+}
+
+/* Below code is used to set the footer color animation */
+@keyframes footercolor {
+    10% {background-color: peachpuff;}
+    20% {background-color: rgb(245, 118, 8);}
+    30% {background-color: rgb(72, 243, 5);}
+    40% {background-color: rgb(238, 5, 5);}
+    50% {background-color: rgb(172, 163, 156);}
+    60% {background-color: rgb(90, 238, 248);}
+    70% {background-color: rgb(245, 97, 201);}
+    80% {background-color: rgba(75, 252, 243, 0.815);}
+    90% {background-color: hsla(140, 75%, 74%, 0.425);}
+    100% {background-color: rgb(229, 243, 33);}
+}
+
+
+footer address h2 {
+    padding: 20px;
+}
+
+footer address p {
+    padding: 10px;
+    margin: 5px;
+}
+
+footer ul {
+    padding: 30px;
+    list-style: none;
+    text-decoration: none;
+
+}
+
+footer ul h2 {
+    padding: 20px;
+}
+footer ul li {
+    padding-top: 10px;
+ 
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+footer h2 {
+    font-size: var(--fontsize1);
+}
+
