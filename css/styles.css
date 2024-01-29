@@ -200,9 +200,12 @@ main p {
 /* OFFER SECTION ELEMENT */
 /* Below code is used to target the offer section element */
 .offers {
-    width: 100vw;
+    background:linear-gradient(45deg, blueviolet, lightgreen);
+    padding: 15px 9%;
+    padding-bottom: 100px;
+    /* width: 100vw;
     height: 100vh;
-    display:inline-block;
+    display:inline-block; */
 }
 
 /* Below code is used to target h2 element in the offers section element */
@@ -211,6 +214,7 @@ main p {
     font-size: var(--fontsize3);
     color: var(--fontcolor1);
     text-align: center;
+    text-shadow: 0 5px 10px rgba(0,0,0, .2);
     justify-content:center;
     align-items: center;
     text-transform: capitalize;
@@ -218,19 +222,30 @@ main p {
 }
 
 /* Below code is used to target the container div element */
-.containerbox {
-    display: inline-flex;
+.offers .containerbox {
+      /*display:inlineflex;
     width: 50%;
     height: 50vh;
     margin-left: 4rem;
-    margin-right: 4rem;
+    margin-right: 4rem;  */
+
+    /* This is Grid setting code  */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap: 20px;
 }
 /* Below code is used to format the box div element */
-.offers .box {
-    display: inline;
+.offers .containerbox .box {
+    /* display: inline;
     width: 90vw;
     height: 90vh;
-    margin:2rem;
+    margin:2rem; */
+
+    /* Grid setting code */
+    box-shadow: 0 5px 10px rgba(0,0,0, .2);
+    border-radius: 5px;
+    text-align: center;
+    padding: 30px 20px;
 }
 
 /* Below code is used to set the hover to the box div element */
@@ -242,8 +257,8 @@ main p {
 
 /* Below code is used to target the img element in the box div element */
 .offers .box img {
-    width: 400px;
-    height: 400px;
+    width: 350px;
+    height: 350px;
     margin-top: -2px;
 }
 
@@ -260,11 +275,16 @@ main p {
 /* ROOMS SECTION ELEMENT */
 /* Below code is used to target the room section element */
 .rooms {
-    width: 100vw;
+    /* width: 100vw;
     height: 140vh;
     display:inline-block;
     background-color: var(--GbColor2);
-    color: var(--fontcolor2);
+    color: var(--fontcolor2); */
+
+    /* Using Grid System code  */
+    background:linear-gradient(45deg, blueviolet, lightgreen);
+    padding: 15px 9%;
+    padding-bottom: 100px;
 }
 
 /* Below code is used to target the h2 element */
@@ -275,6 +295,7 @@ main p {
     padding-top: 4rem;
     padding-bottom: 2px;
     text-transform: capitalize;
+    text-shadow: 0 5px 10px rgba(0,0,0, .2);
 }
 
 /* Below code is used to format the p element in the rooms section elemnt */
@@ -292,13 +313,25 @@ main p {
     height: 140vh;
     margin:2rem;
     cursor: pointer;
+
+    /* This is Grid setting code 
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap: 20px;
+
+    /* Grid setting code */
+    /* box-shadow: 0 5px 10px rgba(0,0,0, .2);
+    border-radius: 5px;
+    text-align: center;
+    padding: 30px 20px  */
+
 }
 
 
 /* Below code is used to format img element in the boxroom div elemnet */
 .boxroom img {
-    width: 320px;
-    height: 320px;
+    width: 350px;
+    height: 350px;
     margin-top: 2rem;
     margin-left: 3rem;
     margin-right: 3rem;
@@ -316,9 +349,14 @@ main p {
 /* GALLERY SECTION ELEMENT */
 /* Below code is used to format the gallery section element */
 .gallery {
-    width: 100vw;
+    /* width: 100vw;
     height: 140vh;
-    display:inline-block;
+    display:inline-block; */
+
+    /* Below code is used to do the grid setting */
+    background:linear-gradient(45deg, blueviolet, lightgreen);
+    padding: 15px 9%;
+    padding-bottom: 100px;
 }
 
 /* Below code is used to format the h2 element in the gallery section element */
@@ -330,6 +368,7 @@ main p {
     padding-bottom: 10px;
     text-transform: capitalize;
     color: var(--fontcolor1);
+    text-shadow: 0 5px 10px rgba(0,0,0, .2);
 }
 
 /* Below code is used to format the p element inside the gallery section element */
@@ -343,21 +382,32 @@ main p {
 }
 
 /* Below code is used to format the boxexplore div element inside the gallery section */
-.boxexplore {
-    display: inline-flex;
+.gallery .boxexplore {
+    /* display: inline-flex;
     width: 50%;
     height: 50vh;
     margin-top: 2rem;
     margin-left: 4rem;
-    margin-right: 4rem;
+    margin-right: 4rem; */
+
+     /* This is Grid setting code  */
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+     gap: 20px;
 }
 
 /* Below code is used to target the explorebox div */
-.gallery .explorebox {
-    display: inline;
+.gallery .boxexplore .explorebox {
+    /* display: inline;
     width: 90vw;
     height: 90vh;
-    margin:2rem;
+    margin:2rem; */
+
+     /* Grid setting code */
+    box-shadow: 0 5px 10px rgba(0,0,0, .2);
+    border-radius: 5px;
+    text-align: center;
+    padding: 30px 20px;
 }
 
 
@@ -370,8 +420,8 @@ main p {
 
 /* Below code is used to format the img element inside the explorebox div element */
 .gallery .explorebox img {
-    width: 400px;
-    height: 400px;
+    width: 350px;
+    height: 350px;
     margin-top: 2px;
 }
 
